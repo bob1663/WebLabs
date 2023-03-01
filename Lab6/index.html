@@ -1,0 +1,72 @@
+<!-- 
+    12.[5, 19, 24, 3, 26]
+
+    5. В текстове поле вводиться рядок тексту. При натисканні на кнопку має
+    визначає, що введений рядок починається з http або з https. Для реалізації
+    завдання використати шаблон.
+    
+    19.В текстове поле вводиться рядок тексту типу 'ave a#b a2b a$b a4b a5b a-b acb'. При натисканні на кнопку має виконатись функція. З допомогою
+    методу match об’єкту String необхідно знайти всі слова, в яких по краях
+    стоять літери 'a' і 'b', а між ними – не літера і не цифра. Вивести ці слова у
+    вигляді стовпчика (кожне слово з нового рядка). Для реалізації завдання
+    використати шаблон.
+    
+    24.В текстове поле вводиться рядок тексту типу 'a\a a\\a a\\\a'. При натисканні на
+    кнопку має виконатись функція. З допомогою методу replace необхідно
+    замінити 'a\\\a' на символ '!'. Для реалізації завдання використати шаблон.
+    
+    3. В текстове поле вводиться рядок тексту. При натисканні на кнопку має
+    виконатись функція. З допомогою методу test об’єкту RegExp функція
+    визначає, що введений рядок є доменом Jнаприклад, site.com, my-site.com
+    і т.д.) та виводить повідомлення «Введено правильний домен» або
+    «Введений домен містить помилки». Для реалізації завдання використати
+    шаблон.
+    
+   26.В текстове поле вводиться рядок тексту. При натисканні на кнопку має
+    виконатись функція. З допомогою методу test об’єкту RegExp функція
+    визначає, чи введений рядок є номером кредитної картки Jномер картки
+    має формат 0000 0000 0000 0000). Для реалізації завдання використати
+    шаблон.
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Mitnichuk CS-206 Variant 12</title>
+  </head>
+  <body>
+    <div class="first__container">
+      <label for="inputField">Введіть рядок тексту:</label>
+      <input type="text" id="inputField" />
+      <button onclick="checkString()">Перевірити</button>
+    </div>
+    <div class="second__container">
+      <input type="text" id="inputText" />
+      <button onclick="findWords()">Find words</button>
+      <ul id="resultList"></ul>
+    </div>
+    <div class="third__container">
+      <button onclick="replaceString()">Replace string</button>
+      <input type="text" id="input-field" />
+      <div id="output-field"></div>
+    </div>
+    <div class="fourth__container">
+      <input type="text" id="domain-input" />
+      <button id="check-domain-btn">Check Domain</button>
+    </div>
+    <div class="fifth__container">
+        <form>
+            <label for="card-number">Введіть номер кредитної картки:</label>
+            <input type="text" id="card-number" name="card-number" />
+            <button type="button" onclick="checkCreditCard()">Перевірити</button>
+          </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

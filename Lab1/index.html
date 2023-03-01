@@ -1,0 +1,91 @@
+<!-- 12. [27, 4, 8, 7, 9, 32, 33, 20, 16, 24, 5, 6] 
+
+27. фігура
+4. таблиця
+8. закреслений текст
+7. поле вводу даних
+9. підкреслений текст
+32. верхній індекс
+33. нижній індекс
+20. меню
+16. заголовки 3
+24. цитата
+5. текст курсив
+6. текст жирність
+
+
+12. [23, 27, 20, 4, 5, 22, 28]
+
+23. максимальна та мінімальна ширина
+27. колір роздільника колонок (додати 
+при потребі)
+20. стилізація списку (якщо потрібно 
+додати)
+4. фон як картинка, прокрутка впливає
+5. рамка, колір, товщина, стиль
+22. відступи зовнішні
+28. задати стиль роздільника між 
+колонками(додати при потребі 
+колонки)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Mitnichuk CS-206 12 Variant</title>
+  </head>
+  <body>
+    <menu>
+      <li><a href="#" class="active">Головна</a></li>
+      <li><a href="#">Про нас</a></li>
+      <li><a href="#">Контакти</a></li>
+      <li><a href="#">Увійти</a></li>
+    </menu>
+    <figure>
+      <img src="./assets/photo_2023-02-22_18-52-21.jpg" alt="Fernando Alonso" />
+      <figcaption>
+        Fig.1 - Fernando Alonso, Aston Martin Cognizant Racing
+      </figcaption>
+    </figure>
+    <blockquote>
+      <p>
+        "Man, i have no brakes, no tyres, no power, i mean we try to do whatever
+        but i dont care too much"
+      </p>
+      <footer>Fernando Alonso</footer>
+    </blockquote>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Gender</td>
+          <td>Age</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fernando</td>
+          <td>Alonso</td>
+          <td>41</td>
+        </tr>
+      </tbody>
+    </table>
+    <s>Закреслений текст</s>
+    <label for="name">Ім'я:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Введіть ім'я Фернандо Алонсо"
+    />
+    <u>Підкресленний текст</u>
+    <h3>
+      Верхній індекс: <sup>привіт</sup> <br />Нижній індекс: <sub>папа</sub>
+    </h3>
+    <p>Це <em>курсив</em>, а це <strong>жирність</strong>.</p>
+  </body>
+</html>

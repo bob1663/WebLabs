@@ -1,0 +1,42 @@
+<!-- 
+    12. [25, 19, 6, 7]
+
+    25. На сторінці розміщений абзац та кнопка. При натиснені на кнопку, 
+    запускається таймер, який генерує число Фібоначі з інтервалом у 1 
+    секунду та записує у абзац. 
+
+    19.На сторінці розміщений абзац, у якому періодично, виводиться поточний 
+    час у форматі hh:mm:ss
+
+    6. На HTML-сторінці розміщено абзац (<p>). Використовуючи таймер, сторінці розміщено кнопку і абзац (<p>). Використовуючи таймер, p>). Використовуючи 
+    таймер реалізувати, щоб при натисненні на кнопку в абзаці появлялось 
+    прізвище та ім’я, яке зникатиме само через 5 секунд.
+
+    7. На HTML-сторінці розміщено абзац (<p>). Використовуючи таймер, сторінці розміщено кнопку і абзац (<p>). Використовуючи таймер, p>). Використовуючи 
+    таймер реалізувати, щоб через 5 секунд в абзаці з’явилось прізвище та 
+    ім’я, а через 10 секунд в інформаційному вікні (alert) з’явилась назва 
+    групи і ім'я.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Mitnichuk CS-206 Variant 12</title>
+  </head>
+  <body>
+    <p id="fibonacci-number"></p>
+    <div class="button-container">
+      <button onclick="startTimer()">Почати</button>
+      <button onclick="stopTimer()">Зупинити</button>
+    </div>
+    <p id="current-time"></p>
+    <p id="name"></p>
+    <button onclick="showName()">Показати ім'я</button>
+    <button onclick="showInfo()" style="margin-top: 1rem;">Показати інформацію</button>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

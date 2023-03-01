@@ -1,0 +1,87 @@
+<!-- 
+    6. Створити HTML сторінку. На сторінці є рядок для введення тексту.
+    Написати JavaScript-код. Коли курсоркод. Якщо в межах рядка для введення клацнуто
+    лівою кнопкою мишки і натиснуто кнопку Ctrl на клавіатурі – то в рядку
+    для введення з’являється напис ‘1’. Якщо в межах рядка для введення
+    клацнуто лівою кнопкою мишки і натиснуто кнопку Alt на клавіатурі – то
+    в рядку для введення з’являється напис ‘2’. Якщо в межах рядка для
+    введення клацнуто лівою кнопкою мишки і натиснуто кнопку Shift на
+    клавіатурі – то в рядку для введення з’являється напис ‘3’.
+
+    9.Створити HTML сторінку. На формі розташовано текстове поле та п’ять
+    перемикачів (Radio). Написати JavaScript-код. Коли курсоркод. При виборі перемикача
+    його текст має з’явитись в текстовому полі.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Mitnichuk CS-206 Variant 12</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="input"
+      style="margin: 5rem 0; width: 900px; height: 45px"
+    />
+    <form>
+      <label for="switch1">Switch 1</label>
+      <input
+        type="radio"
+        id="switch1"
+        name="switch"
+        value="Switch 1"
+        onclick="updateText()"
+      />
+      <br />
+
+      <label for="switch2">Switch 2</label>
+      <input
+        type="radio"
+        id="switch2"
+        name="switch"
+        value="Switch 2"
+        onclick="updateText()"
+      />
+      <br />
+
+      <label for="switch3">Switch 3</label>
+      <input
+        type="radio"
+        id="switch3"
+        name="switch"
+        value="Switch 3"
+        onclick="updateText()"
+      />
+      <br />
+
+      <label for="switch4">Switch 4</label>
+      <input
+        type="radio"
+        id="switch4"
+        name="switch"
+        value="Switch 4"
+        onclick="updateText()"
+      />
+      <br />
+
+      <label for="switch5">Switch 5</label>
+      <input
+        type="radio"
+        id="switch5"
+        name="switch"
+        value="Switch 5"
+        onclick="updateText()"
+      />
+      <br />
+
+      <label for="textbox">Text Box:</label>
+      <input type="text" id="textbox" />
+    </form>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

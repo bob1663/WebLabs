@@ -1,0 +1,81 @@
+<!-- 
+    12.[3, 30, 9, 25, 17]
+
+    3. В текстовий рядок вводяться серія чисел, розділених комою. При
+    натисканні на кнопку має виконатись функція. Функція перетворює в
+    масив введене в текстовий рядок значення та перевіряє чи є в масиві
+    дублікати. Якщо є то видаляє їх та виводить на екран за допомогою alert.
+
+    30.На сторінці зображено 2 поля введення. В обидва текстові рядки
+    вводяться серія значень, розділених комою (значення числові). При
+    натисканні на кнопку має виконатись функція. Функція формує 2
+    масиви і їх об'єднує без повторів. Результатний масиву виводиться на
+    екран у абзаці.
+
+    9. В текстовий рядок вводиться серія чисел(3 числа), що характеризують
+    коефіцієнти квадратного рівняння (ax
+    2+bx+c=0). Після натиснення
+    кнопки, в два абзаци вивести значення x1 x2. Якщо розв'язку немає,
+    вивести повідомлення у alert.
+
+    25.В текстовий рядок вводяться серія значень, розділених комою (значення
+    можуть бути числові та рядкові). При натисканні на кнопку має
+    виконатись функція. Функція формує масив з значень введеного рядка,
+    та сортує його випадковим чином. Результат вивести у абзаці.
+
+    17.Створити функцію, яка буде виводити стовпчик зі значеннями по
+    спаданню від n до 0 (значення n вводиться в текстовому полі на формі).
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Mitnichuk CS-206 Variant 12</title>
+  </head>
+  <body>
+    <input type="text" id="inputText" style="margin-top: 1rem" />
+    <button onclick="removeDuplicates()">Перевірити на дублікати</button>
+
+    <form style="margin-top: 1rem">
+      <label for="input1">Enter values for array 1:</label>
+      <input type="text" id="input1" name="input1" /><br /><br />
+      <label for="input2">Enter values for array 2:</label>
+      <input type="text" id="input2" name="input2" /><br /><br />
+      <button type="button" onclick="mergeArrays()">Merge Arrays</button>
+    </form>
+    <p id="result" style="margin-top: 2rem"></p>
+
+    <form style="margin-top: 2rem">
+      <label for="a">a:</label>
+      <input type="number" id="a" name="a" />
+
+      <label for="b">b:</label>
+      <input type="number" id="b" name="b" />
+
+      <label for="c">c:</label>
+      <input type="number" id="c" name="c" />
+
+      <button type="button" onclick="solveEquation()">Розв'язати</button>
+    </form>
+
+    <div id="result"></div>
+
+    <input type="text" id="input" style="margin-top: 2rem" />
+    <button onclick="sortValues()">Sort</button>
+    <p id="output"></p>
+
+    <div style="margin-top: 2rem">
+      <label for="numberInput">Enter a number:</label>
+      <input type="number" id="numberInput" name="numberInput" required />
+      <button onclick="printColumn()">Print column</button>
+    </div>
+    <div id="columnOutput"></div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

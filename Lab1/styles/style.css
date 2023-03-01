@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/4f2adf11301475.560f5881edabc.jpg");
+  background-size: cover;
+}
+
+figure {
+  border: 1px solid #12572c;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  min-width: 100px;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+table {
+  max-width: 400px;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-family: Tahoma, Geneva, sans-serif;
+  margin-bottom: 1rem;
+}
+table td {
+  padding: 15px;
+}
+table thead td {
+  background-color: #12572c;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid #12572c;
+}
+table tbody td {
+  color: #12572c;
+  border: 1px solid #dddfe1;
+}
+table tbody tr {
+  background-color: #f9fafb;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+s {
+  font-family: Tahoma, Geneva, sans-serif;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+u {
+  margin-top: 1rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+h3 sup,
+h3 sub {
+  color: #12572c;
+}
+
+menu {
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+menu li {
+  display: inline-block;
+  padding: 10px;
+}
+
+menu li a.active {
+  background-color: #12572c;
+  color: #fff;
+}
+
+menu li a {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+menu li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+blockquote {
+  font-size: 1.2em;
+  font-style: italic;
+  border-left: 5px solid #ccc;
+  padding: 10px;
+  margin: 1rem 0;
+  background-color: #f9f9f9;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  content: open-quote;
+  font-size: 3em;
+  color: #ccc;
+  margin-right: 0.25em;
+}
+blockquote:after {
+  content: close-quote;
+  font-size: 3em;
+  color: #ccc;
+  margin-left: 0.25em;
+}
+
+p{
+    margin-top: 1rem;
+    margin-bottom: 100px;
+  font-family: Tahoma, Geneva, sans-serif;
+
+}
