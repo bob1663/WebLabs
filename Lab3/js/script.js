@@ -1,4 +1,4 @@
-function doubleDiv() {
+/* function doubleDiv() {
   let divElements = document.querySelectorAll("div");
 
   divElements.forEach(function (div) {
@@ -12,7 +12,21 @@ function doubleDiv() {
       div.style.width = div.offsetWidth * 2 + "px";
     });
   }, 500);
-}
+} */
+
+window.onload = function() {
+  alert("Сторінка завантажена");
+  var divs = document.getElementsByTagName("div");
+  for (var i = 0; i < divs.length; i++) {
+    console.log("Ширина блоку div " + (i + 1) + ": " + divs[i].offsetWidth + "px");
+  }
+  var resizeDivs = function() {
+    for (var i = 0; i < divs.length; i++) {
+      divs[i].style.width = (divs[i].offsetWidth * 2) + "px";
+    }
+  };
+  setTimeout(resizeDivs, 0);
+};
 
 function changeColor() {
   let className = prompt("Enter class name:");
